@@ -11,6 +11,7 @@ black = "*"
 django = "*"
 pillow = "*"
 django-seed = "*"
+djangorestframework = "*"
 
 [requires]
 python_version = "3.7"
