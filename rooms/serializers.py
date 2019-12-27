@@ -25,3 +25,6 @@ class WriteRoomSerializer(serializers.Serializer):
     check_in = serializers.TimeField(default="00:00:00")
     check_out = serializers.TimeField(default="00:00:00")
     instant_book = serializers.BooleanField(default=False)
+
+    def create(self, validated_data):
+        return Room.objects.create(**validated_data)
