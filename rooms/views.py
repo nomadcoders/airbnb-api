@@ -16,7 +16,6 @@ class RoomViewSet(ModelViewSet):
     serializer_class = RoomSerializer
 
     def get_permissions(self):
-
         if self.action == "list" or self.action == "retrieve":
             permission_classes = [permissions.AllowAny]
         elif self.action == "create":
